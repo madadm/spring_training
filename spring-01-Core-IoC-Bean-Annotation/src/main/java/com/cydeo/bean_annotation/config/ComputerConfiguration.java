@@ -9,6 +9,7 @@ import com.cydeo.bean_annotation.loosely_coupled.motherboardfactory.AsusMotherbo
 import com.cydeo.bean_annotation.loosely_coupled.motherboardfactory.Motherboard;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class ComputerConfiguration {
@@ -19,6 +20,7 @@ public class ComputerConfiguration {
     }
 
     @Bean
+    @Primary
     public Monitor monitorAcer(){
         return new AcerMonitor("23 inch Beast", "Acer", 23);
     }
