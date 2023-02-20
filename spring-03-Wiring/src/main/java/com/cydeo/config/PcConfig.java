@@ -1,4 +1,4 @@
-package com.cydeo.stereotype_annotation.config;
+package com.cydeo.config;
 
 
 import org.springframework.context.annotation.ComponentScan;

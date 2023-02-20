@@ -1,4 +1,4 @@
-package com.cydeo.stereotype_annotation;
+package com.cydeo;
 
 import com.cydeo.stereotype_annotation.config.PcConfig;
 import com.cydeo.stereotype_annotation.monitorfactory.Monitor;

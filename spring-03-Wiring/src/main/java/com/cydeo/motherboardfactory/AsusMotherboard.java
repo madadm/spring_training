@@ -1,4 +1,4 @@
-package com.cydeo.stereotype_annotation.motherboardfactory;
+package com.cydeo.motherboardfactory;
 
 import org.springframework.stereotype.Component;
 
