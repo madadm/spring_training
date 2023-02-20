@@ -6,8 +6,12 @@ import org.springframework.stereotype.Component;
 public class DellCase extends Case {
 
 
-    public DellCase() {
-        super("220B", "Dell", "240");
+//    public DellCase() {
+//        super("220B", "Dell", "240", new Dimensions(8,8,8));
+//    }
+
+    public DellCase(String model, String manufacturer, String powerSupply, Dimensions dimensions) {
+        super(model, manufacturer, powerSupply, dimensions);
     }
 
     @Override

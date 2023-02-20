@@ -1,8 +1,8 @@
 package com.cydeo;
 
-import com.cydeo.stereotype_annotation.casefactory.Case;
-import com.cydeo.stereotype_annotation.monitorfactory.Monitor;
-import com.cydeo.stereotype_annotation.motherboardfactory.Motherboard;
+import com.cydeo.casefactory.Case;
+import com.cydeo.monitorfactory.Monitor;
+import com.cydeo.motherboardfactory.Motherboard;
 
 public class PC {
 
