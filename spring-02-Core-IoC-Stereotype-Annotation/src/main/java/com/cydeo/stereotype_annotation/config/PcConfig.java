@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Configuration
-@ComponentScan
+@ComponentScan("com.cydeo")
 public class PcConfig {
 
 
