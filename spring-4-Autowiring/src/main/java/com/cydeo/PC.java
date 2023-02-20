@@ -3,10 +3,12 @@ package com.cydeo;
 import com.cydeo.casefactory.Case;
 import com.cydeo.monitorfactory.Monitor;
 import com.cydeo.motherboardfactory.Motherboard;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@Getter
 public class PC {
 
     private Case theCase;
