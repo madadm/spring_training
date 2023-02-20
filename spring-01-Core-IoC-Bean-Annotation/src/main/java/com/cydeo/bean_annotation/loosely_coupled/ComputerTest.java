@@ -31,7 +31,17 @@ public class ComputerTest {
 
         myPC.powerUp();
 
+        Monitor sonyMonitor = container.getBean("sony", Monitor.class);// given name sony to sony monitor bean
+        Case theCase1 = container.getBean(Case.class);
+        Motherboard theMotherborad1 = container.getBean(Motherboard.class);
 
+        PC myPc1 = new PC(theCase1, sonyMonitor, theMotherborad1);
+
+        Monitor theMonitor2 = container.getBean( Monitor.class);// given @Primary annotation to the bean
+        Case theCase2 = container.getBean(Case.class);
+        Motherboard theMotherborad2 = container.getBean(Motherboard.class);
+
+        PC myPc2 = new PC(theCase2, theMonitor2, theMotherborad2);
 
     }
 }
