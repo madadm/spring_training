@@ -2,7 +2,9 @@ package com.cydeo.stereotype_annotation.monitorfactory;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Component;
 
+@Component
 @Getter
 @Setter
 public class SonyMonitor extends Monitor{
