@@ -9,7 +9,6 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class CydeoApplication {
 
-
     public static void main(String[] args) {
 
         Comment comment = new Comment();
@@ -24,8 +23,6 @@ public class CydeoApplication {
 
         commentService.printConfigData();
         commentService.printDBConfigData();
-
-
 
 
     }
