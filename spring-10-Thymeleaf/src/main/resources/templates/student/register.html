@@ -42,5 +42,23 @@
     <li th:each="student : ${students} " th:text="${student.getLastName()}"></li>
 </ul>
 
+<table>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Age</td>
+        <td>Gender</td>
+    </tr>
+    <tr th:each="student:${students}" style="border-image-width: 5rem">
+        <td th:text="${student.getFirstName()}"></td>
+        <td th:text="${student.getLastName()}"></td>
+        <td th:text="${student.getAge()}"></td>
+        <td th:text="${student.getState()}"></td>
+    </tr>
+    </table>
+
+
+
+
 </body>
 </html>
