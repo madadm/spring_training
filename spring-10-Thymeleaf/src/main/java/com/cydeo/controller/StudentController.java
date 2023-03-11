@@ -19,7 +19,7 @@ public class StudentController {
     }
 
     @RequestMapping("/welcome")
-    public String welcome(@RequestParam String name, Model model){
+    public String welcome( Model model){
 
         //model.addAttribute("student", )
         //System.out.println(name);
