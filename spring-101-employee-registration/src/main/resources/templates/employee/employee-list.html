@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Employees</title>
+</head>
+<body>
+
+<div class="container p-5 ">
+  <div class="d-flex justify-content-center align-items-center">
+      <h2>Employee List</h2>
+  </div>
+    <div class="d-flex justify-content-center align-items-center p-2">
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <!--        <th scope="col">#</th>-->
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Email</th>
+                <th scope="col">Address</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">ZipCode</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="theEmployee : ${employees}">
+                <th th:text="${theEmployee.firstName}"></th>
+                <th th:text="${theEmployee.lastName}"></th>
+                <th th:text="${#execInfo.getNow().get(1)-theEmployee.birthday.getYear()}"></th>
+                <th th:text="${theEmployee.email}"></th>
+                <th th:text="${theEmployee.address+', '+ theEmployee.address2}"></th>
+                <th th:text="${theEmployee.city}"></th>
+                <th th:text="${theEmployee.state}"></th>
+                <th th:text="${theEmployee.zipCode}"></th>
+            </tr>
+            </tbody>
+        </table>
+</div>
+</div>
+</body>
+</html>
