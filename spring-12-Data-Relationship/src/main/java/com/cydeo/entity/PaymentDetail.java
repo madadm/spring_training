@@ -23,6 +23,11 @@ public class PaymentDetail {
     @Column(columnDefinition = "DATE")
     private LocalDate payoutDate;
 
+
+    @OneToOne
+    @JoinColumn(name="payment_detail_id")
+    private PaymentDetail paymentDetail;
+
     public PaymentDetail(BigDecimal merchantPayoutAmount, BigDecimal commissionAmount, LocalDate payoutDate) {
         this.merchantPayoutAmount = merchantPayoutAmount;
         this.commissionAmount = commissionAmount;
