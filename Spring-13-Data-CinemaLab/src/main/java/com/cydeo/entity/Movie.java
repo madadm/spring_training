@@ -14,7 +14,6 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name="movies")
 public class Movie extends BaseEntity{
 
     private String name;
